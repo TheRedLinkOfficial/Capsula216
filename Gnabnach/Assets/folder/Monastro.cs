@@ -21,11 +21,14 @@ void mudar(){
 
 void OnTriggerEnter2D (Collider2D other){
 if (other.gameObject.tag == "barreira"){
-    mudar();
+    mudar();}
+else if (other.gameObject.tag == "anti"){
+    Destroy(gameObject);
+    }
 }
 
 
-}
+
     // Update is called once per frame
     void Update()
     {
