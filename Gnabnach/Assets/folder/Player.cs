@@ -60,6 +60,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.tag == "chao" )
         {
+            focaPulo = 10f;
             noChao = true;
         }
         if (collision.gameObject.tag == "boost"){
@@ -113,11 +114,7 @@ void OnCollisionEnter2D(Collision2D collision){
             Debug.Log("Jump");
         }
 
-     if (NoBoost == true){focaPulo = 25f;}
-     else
-     {
-        focaPulo = 10f;
-     }
+    
 
 
     }

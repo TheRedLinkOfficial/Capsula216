@@ -13,6 +13,7 @@ public int direction = 1;
     {
         
     }
+
 void mudar(){
     if (direction == 1){direction = 2;}
     else if (direction == 2){direction = 1;}
